@@ -1,0 +1,9 @@
+name: buzz
+version: 0.1.0
+
+authors:
+  - Joakim Reinert <mail@jreinert.com>
+
+crystal: 0.24.1
+
+license: MIT

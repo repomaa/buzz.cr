@@ -23,6 +23,10 @@ module Buzz
       String.new(payload)
     end
 
+    def topic
+      String.new(@message.topic)
+    end
+
     forward_missing_to(@message)
   end
 end

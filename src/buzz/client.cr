@@ -63,6 +63,7 @@ module Buzz
     def listen
       loop do
         Util.handle_error { LibMosquitto.loop(@mosquitto, -1, 1) }
+        sleep 0.1
       end
     end
 

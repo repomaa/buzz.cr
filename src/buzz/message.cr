@@ -9,11 +9,6 @@ module Buzz
       end
     end
 
-    def finalize
-      message_pointer = pointerof(@message)
-      LibMosquitto.message_free(pointerof(message_pointer))
-    end
-
     def payload
       payload_pointer = @message.payload
       Bytes.new(payload_pointer.as(Pointer(UInt8)), @message.payloadlen)
